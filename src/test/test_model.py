@@ -4,10 +4,10 @@ from PIL import Image
 from ultralytics import YOLO
 
 # generate predictions on test data (saved in test_predictions/model_name) AND crops WBCs (saved in wbc_crops)
-model = YOLO("../models/yolo11/runs/detect/yolo11_train_20pt/weights/best.pt")
+model = YOLO("../models/yolo26_nms/runs/detect/yolo26_train_nms/weights/best.pt") # remember to update
 class_names = model.names
 
-model_name = "yolo11" # remember to update
+model_name = "yolo26_nms" # remember to update
 img_dir_str = "../datasets/bccd/test/images"
 img_directory = os.fsencode(img_dir_str)
 
@@ -21,7 +21,7 @@ for img in os.listdir(img_directory):
             show=True, 
             save=True,
             project="test_predictions",
-            name="yolo11",
+            name="yolo26_nms", # remember to update
             exist_ok=True
         )
     
