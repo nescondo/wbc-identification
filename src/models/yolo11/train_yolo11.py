@@ -4,10 +4,12 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
 
 # Train the model
-results = model.train(data="../../datasets/bccd/data.yaml", 
-                      epochs=50,
-                      patience=20, 
-                      imgsz=640, 
-                      device="mps",
-                    #   amp=False,
-                      name="yolo11_train_20pt")
+results = model.train(
+    data="../../datasets/bccd/data.yaml", 
+    epochs=50,
+    patience=20, 
+    imgsz=640, 
+    device="mps",
+  #   amp=False,
+    name="yolo11_train_20pt"
+  )

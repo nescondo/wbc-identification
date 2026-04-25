@@ -31,3 +31,6 @@ dist/
 
 # YOLO/Ultralytics caches
 labels.cache
+test.cache
+valid.cache
+train.cache
