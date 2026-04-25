@@ -29,9 +29,5 @@ build/
 dist/
 *.egg-info/
 
-# YOLO/Ultralytics caches and run outputs
+# YOLO/Ultralytics caches
 labels.cache
-src/**/runs/
-
-# Test outputs
-src/test/runs/
