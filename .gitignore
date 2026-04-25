@@ -1,0 +1,37 @@
+# OS / editor
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# YOLO/Ultralytics caches and run outputs
+labels.cache
+src/**/runs/
+
+# Test outputs
+src/test/runs/

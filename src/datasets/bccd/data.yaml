@@ -1,0 +1,7 @@
+path: bccd
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 3
+names: ['Platelets', 'RBC', 'WBC']
